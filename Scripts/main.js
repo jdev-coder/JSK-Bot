@@ -168,6 +168,22 @@ function msToTime(ms) {
 			});
 
 			client.on("message", (message) => {
+				if (message.content.startsWith("!charizard")) {
+					const exampleEmbed = new Discord.MessageEmbed()
+						.setColor('#0099ff')
+						.setTitle('Your charizard wants to kill you.')
+						.setURL('https://twitter.com')
+						.setAuthor('Charizard', 'https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/1200px-006Charizard.png', 'https://discord.com')
+						.setDescription('Run!')
+						.setThumbnail('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5VJo8A-8MRAPBOioJwxsptR9_4SpVtkrRSg&usqp=CAU')
+						.addFields()
+						.setImage('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/43d744cc-5db1-4f9b-a803-d7f2e009ca3c/d3bqkt6-97dbfdb0-e654-438d-837e-fb98d69b0538.png/v1/fill/w_900,h_720,q_80,strp/charizard_by_turbocharge0_d3bqkt6-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC80M2Q3NDRjYy01ZGIxLTRmOWItYTgwMy1kN2YyZTAwOWNhM2NcL2QzYnFrdDYtOTdkYmZkYjAtZTY1NC00MzhkLTgzN2UtZmI5OGQ2OWIwNTM4LnBuZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.cIcTuRq0_SavFi_oV0SjQyl7OU5mKiRw2OdIYEHPh8Y')
+						.setTimestamp();
+					message.channel.send(exampleEmbed);
+				}
+			});
+
+			client.on("message", (message) => {
         if (message.content.startsWith("!commands")) {
 							message.channel.send("List:");
 							message.channel.send("1. !ismymumgae");
@@ -197,4 +213,4 @@ client.on('guildMemberRemove', member => {
     client.channels.cache.get('765319604184416257').send("Bye, @" + member.displayName + "!"); 
 });
 
-client.login("token");
+client.login("Ntoken");
