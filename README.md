@@ -21,3 +21,5 @@ Run the bat file.
 You're free to edit the code however you like!
 
 Make sure you have Node.js and Discord.js installed!
+
+Enjoy!
