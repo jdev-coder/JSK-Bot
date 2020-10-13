@@ -5,6 +5,7 @@ Create a new project.
 Name it!
 Grab the token.
 Open main.js in scripts folder.
+Scroll all the way down!
 Change client.login("token here") to your token (Obviously)
 Run the bat file.
  
