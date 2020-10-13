@@ -1,0 +1,7 @@
+Commands:
+cd C:\Users\Knight Mackay\Desktop\discordbot
+node main.js
+
+OR:
+
+Run the bat file
