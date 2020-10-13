@@ -1,5 +1,5 @@
 Commands:
-cd C:\Users\Knight Mackay\Desktop\discordbot
+cd C:\Users\name\Desktop\discordbot
 node main.js
 
 OR:
