@@ -69,5 +69,3 @@ ECHO                                                      -+s: soy+. so++os/
 ECHO                                                        /y+  `+ss`  `/                             
 cd C:\Users\user\Desktop\discordbot\Scripts
 node main.js
-cd C:\Users\user\Desktop\discordbot\Discord-Auto-Publisher-master
-node bot.js
