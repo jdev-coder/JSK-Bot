@@ -1,5 +1,9 @@
 # JSK-Bot
 
+Open the batch file with notepad
+
+Change user to your Windows username
+
 How to run?
 
 Go to discord developer.
