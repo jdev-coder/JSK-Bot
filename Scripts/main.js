@@ -12,7 +12,7 @@ let Discord = require("discord.js");
 let client = new Discord.Client();
 
 client.on("ready", () => {
-	console.log("Bot is ready!");
+	console.log("");
 	client.user.setActivity("Doki Doki Literature Club", {
 		type: "WATCHING"
 	});
@@ -167,19 +167,33 @@ function msToTime(ms) {
 				}
 			});
 
-			client.on("message", (message) => {
-				if (message.content.startsWith("!charizard")) {
-					const exampleEmbed = new Discord.MessageEmbed()
+                                               let embed1 = new Discord.MessageEmbed()
 						.setColor('#0099ff')
 						.setTitle('Your charizard wants to kill you.')
-						.setURL('https://twitter.com')
+						.setURL('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/97698f60-bc22-4e73-90ac-9c218eed4ef9/dbjydwb-7791e08c-4888-404f-9562-385d6b04ce51.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTc2OThmNjAtYmMyMi00ZTczLTkwYWMtOWMyMThlZWQ0ZWY5XC9kYmp5ZHdiLTc3OTFlMDhjLTQ4ODgtNDA0Zi05NTYyLTM4NWQ2YjA0Y2U1MS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.exaDACGuXAUULh4mJNw8D_cb-bKV5u3rEeN5TdKCbcU')
 						.setAuthor('Charizard', 'https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/1200px-006Charizard.png', 'https://discord.com')
 						.setDescription('Run!')
 						.setThumbnail('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5VJo8A-8MRAPBOioJwxsptR9_4SpVtkrRSg&usqp=CAU')
 						.addFields()
 						.setImage('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/43d744cc-5db1-4f9b-a803-d7f2e009ca3c/d3bqkt6-97dbfdb0-e654-438d-837e-fb98d69b0538.png/v1/fill/w_900,h_720,q_80,strp/charizard_by_turbocharge0_d3bqkt6-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC80M2Q3NDRjYy01ZGIxLTRmOWItYTgwMy1kN2YyZTAwOWNhM2NcL2QzYnFrdDYtOTdkYmZkYjAtZTY1NC00MzhkLTgzN2UtZmI5OGQ2OWIwNTM4LnBuZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.cIcTuRq0_SavFi_oV0SjQyl7OU5mKiRw2OdIYEHPh8Y')
 						.setTimestamp();
-					message.channel.send(exampleEmbed);
+
+                                               let embed2 = new Discord.MessageEmbed()
+						.setColor('#0099ff')
+						.setTitle('Your charizard is happy!')
+						.setURL('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/97698f60-bc22-4e73-90ac-9c218eed4ef9/dbjydwb-7791e08c-4888-404f-9562-385d6b04ce51.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTc2OThmNjAtYmMyMi00ZTczLTkwYWMtOWMyMThlZWQ0ZWY5XC9kYmp5ZHdiLTc3OTFlMDhjLTQ4ODgtNDA0Zi05NTYyLTM4NWQ2YjA0Y2U1MS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.exaDACGuXAUULh4mJNw8D_cb-bKV5u3rEeN5TdKCbcU')
+						.setAuthor('Charizard', 'https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/1200px-006Charizard.png', 'https://discord.com')
+						.setDescription('Happy :D')
+						.setThumbnail('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5VJo8A-8MRAPBOioJwxsptR9_4SpVtkrRSg&usqp=CAU')
+						.addFields()
+						.setImage('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/97698f60-bc22-4e73-90ac-9c218eed4ef9/dbjydwb-7791e08c-4888-404f-9562-385d6b04ce51.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTc2OThmNjAtYmMyMi00ZTczLTkwYWMtOWMyMThlZWQ0ZWY5XC9kYmp5ZHdiLTc3OTFlMDhjLTQ4ODgtNDA0Zi05NTYyLTM4NWQ2YjA0Y2U1MS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.exaDACGuXAUULh4mJNw8D_cb-bKV5u3rEeN5TdKCbcU')
+						.setTimestamp();
+
+			client.on("message", (message) => {
+				if (message.content.startsWith("!charizard")) {
+					let embeds = [embed1, embed2]
+                                        let random = Math.floor(Math.random() * 2)
+					message.channel.send(embeds[random]);
 				}
 			});
 
@@ -199,6 +213,7 @@ function msToTime(ms) {
 							message.channel.send("11. !changebotstatus");
 							message.channel.send("12. !nitrogive");
                                                         message.channel.send("13. !trumptweet")
+                                                        message.channel.send("14. !charizard")
       }
 						});
 
@@ -213,4 +228,4 @@ client.on('guildMemberRemove', member => {
     client.channels.cache.get('765319604184416257').send("Bye, @" + member.displayName + "!"); 
 });
 
-client.login("Ntoken");
+client.login("NzY0Mjk4OTc4ODQxNzIyOTQw.X4EO5A.75fcxwRva5ASVhy3iJjmgUao_lE");
